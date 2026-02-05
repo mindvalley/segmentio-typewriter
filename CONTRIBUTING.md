@@ -16,9 +16,9 @@ Typewriter is written using [OCLIF](https://oclif.io).
 
 ```sh
 # Install dependencies
-$ yarn
+$ pnpm install
 # Test your Typewriter installation by regenerating Typewriter's typewriter client.
-$ yarn build
+$ pnpm build
 # Develop and test using OCLIFs dev runner to test any of your changes without transpiling
 # This will build Typewriter's own TrackingPlan (src/telemetry/plan.json) with the root dir configuration (typewriter.yml)
 $ ./bin/dev build -m prod -u
@@ -35,8 +35,8 @@ Running the integration tests are heavily recommended for local development as t
 The tests run against all combinations of SDKs and Languages supported with a large TrackingPlan that contains complex values. They are snapshot tests that check against the expected output
 
 ```sh
-$ yarn test # Run all tests
-$ yarn test --updateSnapshot # Update the snapshots automatically after making a change in outputs
+$ pnpm test # Run all tests
+$ pnpm test --updateSnapshot # Update the snapshots automatically after making a change in outputs
 ```
 
 The Tracking Plan and configuration used in tests is contained in `test/env`
@@ -48,7 +48,7 @@ The output is written to `test-env` under specific directories for each language
 You can deploy a new version to [`npm`](https://www.npmjs.com/package/typewriter) by running:
 
 ```
-$ yarn release
+$ pnpm release
 ```
 
 ### Adding a New Language Target

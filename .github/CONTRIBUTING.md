@@ -20,15 +20,15 @@ Have an idea for improving Typewriter? [Submit an issue first](https://github.co
 # Use node version defined in .nvmrc
 $ nvm use
 # Install dependencies
-$ yarn
+$ pnpm install
 # Test your Typewriter installation by regenerating Typewriter's typewriter client.
-$ yarn build && yarn dev build
+$ pnpm build && ./bin/dev build
 ```
 
 ### Running Tests
 
 ```sh
-$ yarn test
+$ pnpm test
 ```
 
 ### Deploying
@@ -36,7 +36,7 @@ $ yarn test
 You can deploy a new version to [`npm`](https://www.npmjs.com/package/typewriter) by running:
 
 ```
-$ yarn release
+$ pnpm release
 ```
 
 ## Notes on JSON Schema AST

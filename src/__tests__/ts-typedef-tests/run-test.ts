@@ -68,7 +68,7 @@ const _main = (async () => {
     const buildPath = path.resolve(__dirname, "build");
     const testPath = path.resolve(__dirname, "tests");
     if (!fs.existsSync(buildPath)) {
-      throw new Error('please run "yarn build"');
+      throw new Error('please run "pnpm build"');
     }
     const paths = [buildPath, testPath].flatMap(listFiles);
     await typecheckFiles(paths);
