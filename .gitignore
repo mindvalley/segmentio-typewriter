@@ -2,8 +2,7 @@
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 
 # Runtime data
 pids
@@ -51,9 +50,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
 # dotenv environment variables file
 .env
 
@@ -65,7 +61,8 @@ dist
 
 .DS_Store
 
-# We use yarn.lock
+# We use pnpm-lock.yaml
+yarn.lock
 package-lock.json
 
 # VSCode

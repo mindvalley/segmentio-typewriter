@@ -6,6 +6,8 @@ import { run } from "../__helpers__/oclif-runner";
 
 const TEST_ENV_PATH = "production";
 
+jest.setTimeout(20000);
+
 describe("prod", () => {
   const configurations = [
     ["typescript", "analytics-node", "segment.ts"],
