@@ -42,9 +42,10 @@ var StringEnum;
  *
  * Note that the production bundle does not depend on Ajv.
  *
- * You can install it with: \`npm install --save-dev ajv\`.
+ * You can install it with: \`npm install --save-dev ajv ajv-formats\`.
  */
 var ajv_1 = __importDefault(require(\\"ajv\\"));
+var ajv_formats_1 = __importDefault(require(\\"ajv-formats\\"));
 /**
  * The default handler that is fired if none is supplied with setTypewriterOptions.
  * If NODE_ENV=\\"test\\", this handler will throw an error. Otherwise, it will log
@@ -94,6 +95,7 @@ exports.setTypewriterOptions = setTypewriterOptions;
     */
 function validateAgainstSchema(message, schema) {
     var ajv = new ajv_1.default({ allErrors: true, verbose: true });
+    (0, ajv_formats_1.default)(ajv);
     if (!ajv.validate(schema, message.properties) && ajv.errors) {
         onViolation(message, ajv.errors);
     }
@@ -5831,9 +5833,10 @@ export interface NoIDType {
  *
  * Note that the production bundle does not depend on Ajv.
  * 
- * You can install it with: \`npm install --save-dev ajv\`.
+ * You can install it with: \`npm install --save-dev ajv ajv-formats\`.
  */
 import Ajv, { ErrorObject } from 'ajv'
+import addFormats from 'ajv-formats'
 
 /**
  * The analytics.js snippet should be available via window.analytics.
@@ -5938,6 +5941,7 @@ function validateAgainstSchema(
     schema: object
 ) {
     const ajv = new Ajv({ allErrors: true, verbose: true })
+    addFormats(ajv)
 
     if (!ajv.validate(schema, message) && ajv.errors) {
         onViolation(message, ajv.errors)
@@ -7595,9 +7599,10 @@ export interface NoIDType {
  *
  * Note that the production bundle does not depend on Ajv.
  * 
- * You can install it with: \`npm install --save-dev ajv\`.
+ * You can install it with: \`npm install --save-dev ajv ajv-formats\`.
  */
 import Ajv, { ErrorObject } from 'ajv'
+import addFormats from 'ajv-formats'
 
 /**
  * You can install \`@segment/analytics-node\` by following instructions at: 
@@ -7719,6 +7724,7 @@ function validateAgainstSchema(
     schema: object
 ) {
     const ajv = new Ajv({ allErrors: true, verbose: true })
+    addFormats(ajv)
 
     if (!ajv.validate(schema, message.properties) && ajv.errors) {
         onViolation(message, ajv.errors)
@@ -9443,9 +9449,10 @@ export interface PurpleEventCollided {
  *
  * Note that the production bundle does not depend on Ajv.
  * 
- * You can install it with: \`npm install --save-dev ajv\`.
+ * You can install it with: \`npm install --save-dev ajv ajv-formats\`.
  */
 import Ajv, { ErrorObject } from 'ajv'
+import addFormats from 'ajv-formats'
 
 /**
  * You can install \`@segment/analytics-node\` by following instructions at: 
@@ -9567,6 +9574,7 @@ function validateAgainstSchema(
     schema: object
 ) {
     const ajv = new Ajv({ allErrors: true, verbose: true })
+    addFormats(ajv)
 
     if (!ajv.validate(schema, message.properties) && ajv.errors) {
         onViolation(message, ajv.errors)
@@ -11252,9 +11260,10 @@ export interface PurpleEventCollided {
  *
  * Note that the production bundle does not depend on Ajv.
  * 
- * You can install it with: \`npm install --save-dev ajv\`.
+ * You can install it with: \`npm install --save-dev ajv ajv-formats\`.
  */
 import Ajv, { ErrorObject } from 'ajv'
+import addFormats from 'ajv-formats'
 
 /**
  * You can install \`@segment/analytics-node\` by following instructions at: 
@@ -11376,6 +11385,7 @@ function validateAgainstSchema(
     schema: object
 ) {
     const ajv = new Ajv({ allErrors: true, verbose: true })
+    addFormats(ajv)
 
     if (!ajv.validate(schema, message.properties) && ajv.errors) {
         onViolation(message, ajv.errors)
