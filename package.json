@@ -46,7 +46,6 @@
     "@segment/analytics-react-native": "^2.2.1",
     "@types/chai": "^4",
     "@types/debug": "^4.1.7",
-    "@types/got": "^9.6.12",
     "@types/inquirer": "^8.2.1",
     "@types/jest": "^29.0.0",
     "@types/json-stable-stringify": "^1.0.34",
