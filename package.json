@@ -93,7 +93,7 @@
     }
   },
   "scripts": {
-    "build": "shx rm -rf dist && npm run build:typedef-test-artifacts && tsc && copyfiles --up 1 \"src/**/*.hbs\" dist && npm run build:telemetry",
+    "build": "shx rm -rf dist && pnpm run build:typedef-test-artifacts && tsc && copyfiles --up 1 \"src/**/*.hbs\" dist && pnpm run build:telemetry",
     "build:telemetry": "./bin/run -m=prod",
     "build:typedef-test-artifacts": "ts-node src/__tests__/ts-typedef-tests/run-build.ts",
     "lint": "eslint",
@@ -102,7 +102,7 @@
     "posttest": "pnpm lint",
     "prepack": "pnpm build && oclif manifest && oclif readme",
     "test": "pnpm test:typedef && jest --runInBand",
-    "test:typedef": "npm run build:typedef-test-artifacts && ts-node src/__tests__/ts-typedef-tests/run-test.ts",
+    "test:typedef": "pnpm run build:typedef-test-artifacts && ts-node src/__tests__/ts-typedef-tests/run-test.ts",
     "version": "oclif readme && git add README.md"
   },
   "engines": {
