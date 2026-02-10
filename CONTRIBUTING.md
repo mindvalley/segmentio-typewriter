@@ -45,11 +45,13 @@ The output is written to `test-env` under specific directories for each language
 
 ### Deploying
 
-You can deploy a new version to [`npm`](https://www.npmjs.com/package/typewriter) by running:
+Releases are published via GitHub Releases when a version tag is pushed.
 
-```
-$ pnpm release
-```
+1. Bump the version in `package.json`.
+2. Run `pnpm build` and commit any changes under `src/telemetry/`.
+3. Commit the version bump.
+4. Tag the commit as `vX.Y.Z` and push tags.
+5. GitHub Actions builds, tests, and publishes the release assets.
 
 ### Adding a New Language Target
 

@@ -77,7 +77,7 @@ export async function saveWorkspaceConfig(
   path: string
 ): Promise<void> {
   const CONFIG_HEADER =
-    "Segment Typewriter Configuration (https://segment.com/docs/protocols/typewriter)\nJust run `npx typewriter@next` to re-generate a client with the latest versions of these events.";
+    "Segment Typewriter Configuration (https://segment.com/docs/protocols/typewriter)\nJust run `npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz` to re-generate a client with the latest versions of these events.";
 
   const doc = new Document(config);
   doc.commentBefore = CONFIG_HEADER;

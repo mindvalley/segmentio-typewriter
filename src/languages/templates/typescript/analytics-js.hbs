@@ -209,7 +209,7 @@ export default new Proxy<typeof clientAPI>(clientAPI, {
 
     return () => {
       console.warn(`⚠️  You made an analytics call (${String(method)}) that can't be found. Either:
-     a) Re-generate your typewriter client: \`npx typewriter\`
+     a) Re-generate your typewriter client: \`npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz\`
      b) Add it to your Tracking Plan: https://app.segment.com/segment-oscb/protocols/tracking-plans/rs_1zTHJU9fd5mt7cndWnd4PgJbMCE`);
       const a = analytics();
       if (a) {

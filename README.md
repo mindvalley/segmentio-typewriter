@@ -6,11 +6,11 @@
   <br>
   <br>
   <br>
-  <a href="http://www.npmjs.com/package/typewriter">
-    <img src="https://img.shields.io/npm/v/typewriter.svg" alt="NPM Version">
+  <a href="https://github.com/segmentio/typewriter/releases">
+    <img src="https://img.shields.io/github/v/release/segmentio/typewriter" alt="GitHub Release">
   </a>
   <a href="./.github/LICENSE.md">
-    <img src="https://img.shields.io/npm/l/typewriter.svg" alt="License">
+    <img src="https://img.shields.io/github/license/segmentio/typewriter.svg" alt="License">
   </a>
   <a href="https://snyk.io/test/github/segmentio/typewriter?targetFile=package.json">
     <img src="https://snyk.io/test/github/segmentio/typewriter/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/segmentio/typewriter?targetFile=package.json">
@@ -34,7 +34,7 @@
 
 ```sh
 # Walks you through setting up a `typewriter.yml` and generating your first client.
-$ npx typewriter init
+$ npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz init
 ```
 
 For more instructions on setting up your `typewriter` client, such as adding it to your CI, see our [documentation](https://segment.com/docs/protocols/typewriter).
@@ -53,5 +53,5 @@ Check the instructions on our [documentation](https://segment.com/docs/protocols
   If you need to use these libraries you can run v7 specifying the version with your commands:
 
 ```sh
-$ npx typewriter@7 build
+$ npx https://github.com/segmentio/typewriter/releases/download/v<7.x.y>/typewriter-<7.x.y>.tgz build
 ```

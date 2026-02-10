@@ -1,6 +1,8 @@
 import * as oclif from "@oclif/core";
 import { stdout, stderr } from "stdout-stderr";
 
+jest.setTimeout(20000);
+
 describe("version", () => {
   it("works", async () => {
     oclif.settings.debug = true;

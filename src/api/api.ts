@@ -291,7 +291,7 @@ async function apiGet<T>(
           "Permission denied by Segment API",
           error,
           `Failed while querying the ${url} endpoint`,
-          "Verify you are using the right API token by running 'npx typewriter tokens'"
+          "Verify you are using the right API token by running 'npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz tokens'"
         );
       } else if (error instanceof TimeoutError) {
         throw wrapError(
