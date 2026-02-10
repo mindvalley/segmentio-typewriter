@@ -1,6 +1,6 @@
 {
   "name": "typewriter",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "packageManager": "pnpm@10.28.1",
   "description": "A compiler for generating strongly typed analytics clients via Segment Protocols",
   "repository": "ssh://git@github.com/segmentio/typewriter.git",
