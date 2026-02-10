@@ -372,7 +372,7 @@ function withTypewriterContext<P extends Record<string, any>, T extends TrackMes
             ...(message.context || {}),
             typewriter: {
                 language: 'typescript',
-                version: '9.2.0',
+                version: '10.0.0',
             },
         },
     }
@@ -647,3 +647,4 @@ export default new Proxy<typeof clientAPI>(clientAPI, {
         };
     },
 });
+
