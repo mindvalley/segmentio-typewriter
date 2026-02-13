@@ -54,17 +54,17 @@ describe("selectLatestReleaseVersion", () => {
 describe("parseGitHubRepoSlug", () => {
   it("parses repository ssh url", () => {
     const slug = parseGitHubRepoSlug({
-      repository: "ssh://git@github.com/segmentio/typewriter.git",
+      repository: "ssh://git@github.com/mindvalley/segmentio-typewriter.git",
     });
 
-    expect(slug).toBe("segmentio/typewriter");
+    expect(slug).toBe("mindvalley/segmentio-typewriter");
   });
 
   it("falls back to homepage", () => {
     const slug = parseGitHubRepoSlug({
-      homepage: "https://github.com/segmentio/typewriter",
+      homepage: "https://github.com/mindvalley/segmentio-typewriter",
     });
 
-    expect(slug).toBe("segmentio/typewriter");
+    expect(slug).toBe("mindvalley/segmentio-typewriter");
   });
 });

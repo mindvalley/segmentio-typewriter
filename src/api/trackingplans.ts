@@ -160,7 +160,7 @@ export async function loadTrackingPlans(
       debug("No local copy of this Tracking Plan, fetching from API.");
     }
 
-    // If we are pulling the latest Tracking Plan (npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz), or if there is no local
+    // If we are pulling the latest Tracking Plan (npx https://github.com/mindvalley/segmentio-typewriter/releases/latest/download/typewriter.tgz), or if there is no local
     // copy of the Tracking Plan (plan.json), then query the API for the latest Tracking Plan.
     let newTrackingPlan: SegmentAPI.TrackingPlan | undefined;
     if (forceUpdate || previousTrackingPlan === undefined) {

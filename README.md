@@ -6,7 +6,7 @@
   <br>
   <br>
   <br>
-  <a href="https://github.com/segmentio/typewriter/releases">
+  <a href="https://github.com/mindvalley/segmentio-typewriter/releases">
     <img src="https://img.shields.io/github/v/release/segmentio/typewriter" alt="GitHub Release">
   </a>
   <a href="./.github/LICENSE.md">
@@ -34,7 +34,7 @@
 
 ```sh
 # Walks you through setting up a `typewriter.yml` and generating your first client.
-$ npx https://github.com/segmentio/typewriter/releases/latest/download/typewriter.tgz init
+$ npx https://github.com/mindvalley/segmentio-typewriter/releases/latest/download/typewriter.tgz init
 ```
 
 For more instructions on setting up your `typewriter` client, such as adding it to your CI, see our [documentation](https://segment.com/docs/protocols/typewriter).
@@ -53,5 +53,5 @@ Check the instructions on our [documentation](https://segment.com/docs/protocols
   If you need to use these libraries you can run v7 specifying the version with your commands:
 
 ```sh
-$ npx https://github.com/segmentio/typewriter/releases/download/v<7.x.y>/typewriter-<7.x.y>.tgz build
+$ npx https://github.com/mindvalley/segmentio-typewriter/releases/download/v<7.x.y>/typewriter-<7.x.y>.tgz build
 ```
