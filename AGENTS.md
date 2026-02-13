@@ -1,5 +1,17 @@
 # Repository Guidelines
 
+## Release Process (Must Follow)
+- Never create or push a `v*` tag before the release commit exists.
+- For each release `X.Y.Z`, update both:
+  - `package.json` -> `"version": "X.Y.Z"`
+  - `src/telemetry/segment.ts` -> `typewriter.version: 'X.Y.Z'`
+- Commit those changes as `chore: release X.Y.Z`.
+- Verify release invariants before tagging:
+  - `node -p "require('./package.json').version"` returns `X.Y.Z`
+  - `rg -n \"version: 'X.Y.Z'\" src/telemetry/segment.ts` matches once
+- Only then create tag `vX.Y.Z` on that release commit and push it.
+- If a tag is already published with the wrong target, do not reuse that version; cut the next patch version.
+
 ## Project Structure & Module Organization
 - `src/` contains the TypeScript source, including CLI commands (`src/commands`), language generators (`src/languages`), hooks (`src/hooks`), and telemetry (`src/telemetry`).
 - `src/__tests__` holds unit and typedef tests.

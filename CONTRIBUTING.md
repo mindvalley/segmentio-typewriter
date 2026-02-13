@@ -6,7 +6,7 @@ Please see our [issue template](ISSUE_TEMPLATE.md) for issues specifically.
 
 ## Issues, Bugfixes and New Language Support
 
-Have an idea for improving Typewriter? [Submit an issue first](https://github.com/segmentio/typewriter/issues/new), and we'll be happy to help you scope it out and make sure it is a good fit for Typewriter.
+Have an idea for improving Typewriter? [Submit an issue first](https://github.com/mindvalley/segmentio-typewriter/issues/new), and we'll be happy to help you scope it out and make sure it is a good fit for Typewriter.
 
 ## Developing on Typewriter
 
@@ -55,7 +55,7 @@ Releases are published via GitHub Releases when a version tag is pushed.
 
 ### Adding a New Language Target
 
-> Before working towards adding a new language target, please [open an issue on GitHub](https://github.com/segmentio/typewriter/issues/new) that walks through your proposal for the new language support. See the [issue template](ISSUE_TEMPLATE.md) for details.
+> Before working towards adding a new language target, please [open an issue on GitHub](https://github.com/mindvalley/segmentio-typewriter/issues/new) that walks through your proposal for the new language support. See the [issue template](ISSUE_TEMPLATE.md) for details.
 
 All languages are just objects that implement the [`LanguageGenerator`](src/languages/types.ts) interface. We have a [quick an easy way](#using-quicktype) to use [Handlebars](http://handlebarsjs.com/) and [Quicktype](quicktype.io) which should cover most of the scenarios but you can always write your own [renderer](#using-a-custom-renderer).
 
